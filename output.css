@@ -1,0 +1,634 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-size: arial;
+}
+
+header {
+  background-color: lightblue;
+  margin-bottom: 100px;
+}
+header li {
+  list-style: none;
+}
+header li a {
+  color: beige;
+  text-decoration: none;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  font-size: 35px;
+}
+header nav .logotext {
+  display: flex;
+  text-align: center;
+  margin: 5px;
+}
+header nav .gdn {
+  color: beige;
+  font-size: 25px;
+  margin-top: 25px;
+  margin-left: 10px;
+}
+header nav a img {
+  border-radius: 50%;
+  border-width: 3px;
+  border-style: solid;
+  border-color: beige;
+  height: 80px;
+  width: 80px;
+  margin: 0px;
+}
+header .navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+header .navmenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+header .nav-branding {
+  font-size: 2rem;
+}
+header .nav-link {
+  transition: 0.7s ease;
+}
+header .nav-link:hover {
+  color: black;
+}
+header .hamburger {
+  display: none;
+  cursor: pointer;
+}
+header .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: beige;
+}
+
+.dark {
+  background-color: rgb(60, 60, 60);
+  color: white;
+}
+.dark header {
+  background-color: #000;
+}
+.dark body {
+  color: white;
+}
+.dark section {
+  background-color: black;
+  color: white;
+}
+.dark footer {
+  background-color: #000;
+  color: white;
+}
+
+body {
+  background-color: beige;
+}
+body .btn-toggle {
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  color: lightblue;
+  border-radius: 50%;
+  border: solid 2px beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+body .btn-toggle:hover {
+  background-color: lightblue;
+  color: white;
+  transition: 0.3s ease;
+}
+body .ctitre {
+  text-align: center;
+  color: lightblue;
+  font-size: 75px;
+  margin-top: 100px;
+}
+body .csous {
+  text-align: center;
+  color: #87afbd;
+  font-size: 35px;
+}
+body .btn {
+  margin-top: 10px;
+  cursor: pointer;
+}
+body .btn img {
+  display: block;
+  height: 70px;
+  width: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body .btn img:hover {
+  height: 80px;
+  width: 80px;
+  transition: 0.3s ease;
+}
+body .emplacement {
+  text-align: center;
+  margin-top: 500px;
+}
+body .imgemplacement {
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body .flecheh {
+  position: absolute;
+  transform: rotate(180deg);
+  height: 50px;
+  width: 100px;
+  top: 10px;
+}
+body .ttlesmetros {
+  top: 100%;
+}
+body img {
+  height: 300px;
+  width: 400px;
+}
+body h2 {
+  color: lightblue;
+  font-size: 30px;
+}
+body h3 {
+  margin-top: 20px;
+  color: lightblue;
+}
+body .deser {
+  color: lightblue;
+  font-size: 30px;
+  margin: auto;
+  text-align: center;
+  margin-top: 65px;
+}
+body .imgmetro {
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+  justify-content: center;
+}
+body .imgmetro img {
+  display: block;
+  height: 80px;
+  width: 100px;
+}
+body .imgmetro .rermetro {
+  display: flex;
+}
+body .imgmetro .rermetro .b {
+  height: 50px;
+  width: 5px;
+}
+
+section {
+  margin-top: 100px;
+  height: 110vh;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 10% 20% 10% 20% 10% 20% 10%;
+  grid-template-rows: 14% 29% 19% 29% 9%;
+  background-color: lightblue;
+}
+section h1 {
+  text-align: center;
+  grid-row: 1/2;
+  grid-column: 3/6;
+  margin-top: 10px;
+  font-size: 50px;
+  color: beige;
+}
+section .un {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  height: 100%;
+  width: 100%;
+  border: solid 2px beige;
+}
+section .textun {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  color: beige;
+  text-align: center;
+}
+section .deux {
+  grid-row: 2/3;
+  grid-column: 4/5;
+  height: 100%;
+  width: 100%;
+  border: solid 2px beige;
+}
+section .textdeux {
+  grid-row: 3/4;
+  grid-column: 4/5;
+  color: beige;
+  text-align: center;
+}
+section .trois {
+  grid-row: 2/3;
+  grid-column: 6/7;
+  height: 100%;
+  width: 100%;
+  border: solid 2px beige;
+}
+section .texttrois {
+  grid-row: 3/4;
+  grid-column: 6/7;
+  color: beige;
+  text-align: center;
+}
+section .quatre {
+  grid-row: 4/5;
+  grid-column: 2/3;
+  height: 100%;
+  width: 100%;
+  border: solid 2px beige;
+}
+section .textquatre {
+  grid-row: 5/6;
+  grid-column: 2/3;
+  color: beige;
+  text-align: center;
+}
+section .cinq {
+  grid-row: 4/5;
+  grid-column: 4/5;
+  height: 100%;
+  width: 100%;
+  border: solid 2px beige;
+}
+section .textcinq {
+  grid-row: 5/6;
+  grid-column: 4/5;
+  color: beige;
+  text-align: center;
+}
+section .six {
+  grid-row: 4/5;
+  grid-column: 6/7;
+  height: 100%;
+  width: 100%;
+  border: solid 2px beige;
+}
+section .textsix {
+  grid-row: 5/6;
+  grid-column: 6/7;
+  color: beige;
+  text-align: center;
+}
+
+@media screen and (min-width: 801px) and (max-width: 1023px) {
+  header nav .gdn {
+    color: beige;
+    font-size: 25px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  header nav .logotext {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2px;
+  }
+  header .hamburger {
+    display: block;
+  }
+  header .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  header .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  header .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  header .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 116px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgb(148, 186, 199);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 20px;
+  }
+  header .nav-item {
+    margin: 16px 0;
+  }
+  header .nav-menu.active {
+    left: 0;
+  }
+  body .emplacement {
+    margin-top: 650px;
+  }
+  body section {
+    margin-top: 100px;
+    height: 110vh;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 7% 25% 5% 25% 5% 25%;
+    grid-template-rows: 25% 20% 19% 20% 9%;
+    background-color: lightblue;
+  }
+  body section h1 {
+    text-align: center;
+    grid-row: 1/2;
+    grid-column: 3/6;
+    margin-top: 10px;
+    font-size: 50px;
+    color: beige;
+  }
+  body section .un {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    height: 100%;
+    width: 100%;
+    border: solid 2px beige;
+  }
+  body section .textun {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    color: beige;
+    text-align: center;
+  }
+  body section .deux {
+    grid-row: 2/3;
+    grid-column: 4/5;
+    height: 100%;
+    width: 100%;
+    border: solid 2px beige;
+  }
+  body section .textdeux {
+    grid-row: 3/4;
+    grid-column: 4/5;
+    color: beige;
+    text-align: center;
+  }
+  body section .trois {
+    grid-row: 2/3;
+    grid-column: 6/7;
+    height: 100%;
+    width: 100%;
+    border: solid 2px beige;
+  }
+  body section .texttrois {
+    grid-row: 3/4;
+    grid-column: 6/7;
+    color: beige;
+    text-align: center;
+  }
+  body section .quatre {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    height: 100%;
+    width: 100%;
+    border: solid 2px beige;
+  }
+  body section .textquatre {
+    grid-row: 5/6;
+    grid-column: 2/3;
+    color: beige;
+    text-align: center;
+  }
+  body section .cinq {
+    grid-row: 4/5;
+    grid-column: 4/5;
+    height: 100%;
+    width: 100%;
+    border: solid 2px beige;
+  }
+  body section .textcinq {
+    grid-row: 5/6;
+    grid-column: 4/5;
+    color: beige;
+    text-align: center;
+  }
+  body section .six {
+    grid-row: 4/5;
+    grid-column: 6/7;
+    height: 100%;
+    width: 100%;
+    border: solid 2px beige;
+  }
+  body section .textsix {
+    grid-row: 5/6;
+    grid-column: 6/7;
+    color: beige;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  header nav .gdn {
+    color: beige;
+    font-size: 25px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  header nav .logotext {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2px;
+  }
+  header .hamburger {
+    display: block;
+  }
+  header .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  header .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  header .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  header .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 116px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgb(148, 186, 199);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 20px;
+  }
+  header .nav-item {
+    margin: 16px 0;
+  }
+  header .nav-menu.active {
+    left: 0;
+  }
+  body .ctitre {
+    font-size: 30px;
+  }
+  body .csous {
+    font-size: 20px;
+  }
+  body .emplacement {
+    text-decoration: underline;
+    font-size: 20px;
+  }
+  body .imgemplacement {
+    height: 150px;
+    width: 170px;
+  }
+  body .deser {
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  body .ttlesmetros img {
+    height: 50px;
+    width: 80px;
+  }
+  body .btn {
+    display: none;
+  }
+  body .emplacement {
+    margin-top: 50px;
+  }
+  body .btn-toggle {
+    right: 5%;
+    bottom: 5%;
+  }
+  section {
+    margin-top: 50%;
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 5% 40% 10% 40% 5%;
+    grid-template-rows: 15% 20% 7% 20% 7% 20% 5%;
+    background-color: lightblue;
+  }
+  section .un {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    height: 100%;
+    width: 100%;
+    border: solid 2px beige;
+  }
+  section .textun {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    color: beige;
+    text-align: center;
+    margin-top: 0%;
+  }
+  section .deux {
+    grid-row: 2/3;
+    grid-column: 4/5;
+    height: 100%;
+    width: 100%;
+    border: solid 2px beige;
+  }
+  section .textdeux {
+    grid-row: 3/4;
+    grid-column: 4/5;
+    color: beige;
+    text-align: center;
+    margin-top: 0%;
+  }
+  section .trois {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    height: 100%;
+    width: 100%;
+    border: solid 2px beige;
+  }
+  section .texttrois {
+    grid-row: 5/6;
+    grid-column: 2/3;
+    color: beige;
+    text-align: center;
+    margin-top: 0%;
+  }
+  section .quatre {
+    grid-row: 4/5;
+    grid-column: 4/5;
+    height: 100%;
+    width: 100%;
+    border: solid 2px beige;
+  }
+  section .textquatre {
+    grid-row: 5/6;
+    grid-column: 4/5;
+    color: beige;
+    text-align: center;
+    margin-top: 0%;
+  }
+  section .cinq {
+    grid-row: 6/7;
+    grid-column: 2/3;
+    height: 100%;
+    width: 100%;
+    border: solid 2px beige;
+  }
+  section .textcinq {
+    grid-row: 7/8;
+    grid-column: 2/3;
+    color: beige;
+    text-align: center;
+    margin-top: 0%;
+  }
+  section .six {
+    grid-row: 6/7;
+    grid-column: 4/5;
+    height: 100%;
+    width: 100%;
+    border: solid 2px beige;
+  }
+  section .textsix {
+    grid-row: 7/8;
+    grid-column: 4/5;
+    color: beige;
+    text-align: center;
+    margin-top: 0%;
+  }
+  section h1 {
+    font-size: 25px;
+    grid-row: 1/2;
+    grid-column: 2/5;
+  }
+}
+footer {
+  display: flex;
+  background-color: lightblue;
+  color: beige;
+  text-align: center;
+  margin-top: 50px;
+  height: 100px;
+}
+footer h1 {
+  margin: auto;
+  text-align: center;
+}
+
+/*# sourceMappingURL=output.css.map */

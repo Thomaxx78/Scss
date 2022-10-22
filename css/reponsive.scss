@@ -1,0 +1,362 @@
+@media screen and (min-width: 801px) and (max-width: 1023px){
+    header{
+
+
+        nav{
+            
+            .gdn{
+                color: beige;
+                font-size: 25px;
+                margin-top: 0px;
+                margin-left: 0px;
+            }
+    
+            .logotext{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin: 2px;
+            }
+        }
+
+        .hamburger{
+            display: block;
+        }
+        .hamburger.active .bar:nth-child(2){
+            opacity: 0;
+        }
+    
+        .hamburger.active .bar:nth-child(1){
+            transform: translateY(8px) rotate(45deg);
+        }
+    
+        .hamburger.active .bar:nth-child(3){
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    
+        .nav-menu{
+            position: fixed;
+            left: -100%;
+            top: 116px;
+            gap: 0;
+            flex-direction: column;
+            background-color: rgb(148, 186, 199);
+            width: 100%;
+            text-align: center;
+            transition: 0.3s;
+            font-size: 20px;
+        }
+    
+        .nav-item{
+            margin: 16px 0;
+        }
+    
+        .nav-menu.active{
+            left: 0;
+        }
+        }
+
+
+    body{
+        .emplacement{
+            margin-top: 650px;
+        }
+
+        
+            section{
+                margin-top: 100px;
+                height: 110vh;
+                width: 90%;
+                margin: auto;
+                display: grid;
+                grid-template-columns: 7% 25% 5% 25% 5% 25%;
+                grid-template-rows: 25% 20% 19% 20% 9%;
+                background-color: lightblue; 
+            
+                h1{
+                    text-align: center;
+                    grid-row: 1/2;
+                    grid-column: 3/6;
+                    margin-top: 10px;
+                    font-size: 50px;
+                    color: beige;
+                }
+            
+                .un{
+                    grid-row: 2/3;
+                    grid-column: 2/3;
+                    @include photogalerie;
+                }
+            
+                .textun{
+                    grid-row: 3/4;
+                    grid-column: 2/3;
+                    @include textgalerie;
+                }
+            
+                .deux{
+                    grid-row: 2/3;
+                    grid-column: 4/5;
+                    @include photogalerie;
+                }
+            
+                .textdeux{
+                    grid-row: 3/4;
+                    grid-column: 4/5;
+                    @include textgalerie;
+                }
+            
+                .trois{
+                    grid-row: 2/3;
+                    grid-column: 6/7;
+                    @include photogalerie;
+                }
+            
+                .texttrois{
+                    grid-row: 3/4;
+                    grid-column: 6/7;
+                    @include textgalerie;
+                }
+            
+                .quatre{
+                    grid-row: 4/5;
+                    grid-column: 2/3;
+                    @include photogalerie;
+                }
+            
+                .textquatre{
+                    grid-row: 5/6;
+                    grid-column: 2/3;
+                    @include textgalerie;
+                }
+            
+                .cinq{
+                    grid-row: 4/5;
+                    grid-column: 4/5;
+                    @include photogalerie;
+                }
+            
+                .textcinq{
+                    grid-row: 5/6;
+                    grid-column: 4/5;
+                    @include textgalerie;
+                }
+            
+                .six{
+                    grid-row: 4/5;
+                    grid-column: 6/7;
+                    @include photogalerie;
+                }
+            
+                .textsix{
+                    grid-row: 5/6;
+                    grid-column: 6/7;
+                    @include textgalerie;
+                }
+            }
+        }
+    }
+    
+
+@media screen and (max-width: 800px) {
+
+    header{
+
+
+        nav{
+            
+            .gdn{
+                color: beige;
+                font-size: 25px;
+                margin-top: 0px;
+                margin-left: 0px;
+            }
+    
+            .logotext{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin: 2px;
+            }
+        }
+
+        .hamburger{
+            display: block;
+        }
+        .hamburger.active .bar:nth-child(2){
+            opacity: 0;
+        }
+    
+        .hamburger.active .bar:nth-child(1){
+            transform: translateY(8px) rotate(45deg);
+        }
+    
+        .hamburger.active .bar:nth-child(3){
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    
+        .nav-menu{
+            position: fixed;
+            left: -100%;
+            top: 116px;
+            gap: 0;
+            flex-direction: column;
+            background-color: rgb(148, 186, 199);
+            width: 100%;
+            text-align: center;
+            transition: 0.3s;
+            font-size: 20px;
+        }
+    
+        .nav-item{
+            margin: 16px 0;
+        }
+    
+        .nav-menu.active{
+            left: 0;
+        }
+        }
+
+    body{
+
+        .ctitre{
+            font-size: 30px;
+        }
+
+        .csous{
+            font-size: 20px;
+        }
+
+        .emplacement{
+            text-decoration: underline;
+            font-size: 20px;
+        }
+
+        .imgemplacement{
+            height: 150px;
+            width: 170px;
+        }
+
+        .deser{
+            font-size: 20px;
+            text-decoration: underline;
+        }
+        
+        .ttlesmetros{
+            img{
+                height: 50px;
+                width: 80px;
+            }
+        }
+
+        .btn{
+            display: none;
+        }
+
+        .emplacement{
+            margin-top: 50px;
+        }
+
+        .btn-toggle{
+            right: 5%;
+            bottom: 5%;
+        }
+    }
+    section{
+        margin-top: 50%;
+        height: 100vh;
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 5% 40% 10% 40% 5%;
+        grid-template-rows: 15% 20% 7% 20% 7% 20% 5%;
+        background-color: lightblue; 
+
+
+        .un{
+            grid-row: 2/3;
+            grid-column: 2/3;
+            @include photogalerie;
+        }
+
+        .textun{
+            grid-row: 3/4;
+            grid-column: 2/3;
+            @include textgalerie;
+            margin-top: 0%;
+        }
+
+        .deux{
+            grid-row: 2/3;
+            grid-column: 4/5;
+            @include photogalerie;
+        }
+
+        .textdeux{
+            grid-row: 3/4;
+            grid-column: 4/5;
+            @include textgalerie;
+            margin-top: 0%;
+        }
+
+        .trois{
+            grid-row: 4/5;
+            grid-column: 2/3;
+            @include photogalerie;
+        }
+
+        .texttrois{
+            grid-row: 5/6;
+            grid-column: 2/3;
+            @include textgalerie;
+            margin-top: 0%;
+        }
+
+        .quatre{
+            grid-row: 4/5;
+            grid-column: 4/5;
+            @include photogalerie;
+        }
+
+        .textquatre{
+            grid-row: 5/6;
+            grid-column: 4/5;
+            @include textgalerie;
+            margin-top: 0%;
+        }
+
+        .cinq{
+            grid-row: 6/7;
+            grid-column: 2/3;
+            @include photogalerie;
+        }
+
+        .textcinq{
+            grid-row: 7/8;
+            grid-column: 2/3;
+            @include textgalerie;
+            margin-top: 0%;
+        }
+
+        .six{
+            grid-row: 6/7;
+            grid-column: 4/5;
+            @include photogalerie;
+        }
+
+        .textsix{
+            grid-row: 7/8;
+            grid-column: 4/5;
+            @include textgalerie;
+            margin-top: 0%;
+        }
+
+        h1{
+            font-size: 25px;
+            grid-row: 1/2;
+            grid-column: 2/5;
+        }
+            }
+
+
+        }

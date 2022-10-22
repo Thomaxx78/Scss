@@ -1,0 +1,10 @@
+@mixin photogalerie($theme:beige){
+    height: 100%;
+    width: 100%;
+    border: solid 2px $theme;
+}
+
+@mixin textgalerie($theme: beige) {
+    color: $theme;
+    text-align: center;
+}
